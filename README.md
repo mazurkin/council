@@ -1,4 +1,4 @@
-# GOON Counsil
+# Council
 
 # prerequisites
 
