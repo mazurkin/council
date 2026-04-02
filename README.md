@@ -1,5 +1,9 @@
 # Council
 
+Andrej Karpathy-style agentic council for Copilot CLI.
+
+Requires Conda and Copilot CLI with Claude Opus/Sonnet and OpenAI ChatGPT models.
+
 # prerequisites
 
 ## Conda installation
