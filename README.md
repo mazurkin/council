@@ -33,7 +33,7 @@ Requires Conda and Copilot CLI with Claude Opus/Sonnet and OpenAI ChatGPT models
 
 roles:
 - "critic", the manager, the boss, the auditor, the controller, tracks the progress, plans the iterations
-- "innovator", follow the plan from the "critic", does all the work, provides feedback
+- "innovator", multiple agents who follow the plan from the "critic", do all the work and provide the feedback
 - "dreamer", an independent actor who brainstorms and thinks out-of-the-bos
 - "clerks", documents the process and updates the knowledge base
 
