@@ -4,6 +4,39 @@ Andrej Karpathy-style agentic council for Copilot CLI.
 
 Requires Conda and Copilot CLI with Claude Opus/Sonnet and OpenAI ChatGPT models.
 
+# workflow
+
+```text
+         [problem.md]
+              │          ┌───────────┐          ┌───────────┐          ┌───────────┐
+              ▼          │           ▼          │           ▼          │           ▼
+       ┌─────────────┐   │    ┌─────────────┐   │    ┌─────────────┐   │    ┌─────────────┐
+       │   critic    │   │    │   critic    │   │    │   critic    │   │    │   critic    │
+       └──────┬──────┘   │    └──────┬──────┘   │    └──────┬──────┘   │    └──────┬──────┘
+              ▼          │           ▼          │           ▼          │           │
+     ┌─────────────┐     │  ┌─────────────┐     │  ┌─────────────┐     │           │
+     │ ┌─────────────┐   │  │ ┌─────────────┐   │  │ ┌─────────────┐   │           │
+     └─│ ┌─────────────┐ │  └─│ ┌─────────────┐ │  └─│ ┌─────────────┐ │           │
+       └─│  innovator  │ │    └─│  innovator  │ │    └─│  innovator  │ │           │
+         └────┬────────┘ │      └────┬────────┘ │      └────┬────────┘ │           │
+              ▼          │           ▼          │           ▼          │           │
+       ┌─────────────┐   │    ┌─────────────┐   │    ┌─────────────┐   │           │
+       │   dreamer   │   │    │   dreamer   │   │    │   dreamer   │   │           │
+       └──────┬──────┘   │    └──────┬──────┘   │    └──────┬──────┘   │           │
+              ▼          │           ▼          │           ▼          │           ▼
+       ┌─────────────┐   │    ┌─────────────┐   │    ┌─────────────┐   │    ┌─────────────┐
+       │    clerk    │   │    │    clerk    │   │    │    clerk    │   │    │    clerk    │
+       └──────┬──────┘   │    └──────┬──────┘   │    └──────┬──────┘   │    └──────┬──────┘
+              └──────────┘           └──────────┘           └──────────┘           ▼
+                                                                                [result]
+```
+
+roles:
+- "critic", the manager, the boss, the auditor, the controller, tracks the progress, plans the iterations
+- "innovator", follow the plan from the "critic", does all the work, provides feedback
+- "dreamer", an independent actor who brainstorms and thinks out-of-the-bos
+- "clerks", documents the process and updates the knowledge base
+
 # prerequisites
 
 ## Conda installation
