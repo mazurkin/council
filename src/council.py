@@ -34,9 +34,9 @@ so you can read all previous reports of all council members at any time.
 You do not need to save your individual report yourself, it will be saved by the external orchestrator
 to the `.council/reports` folder. Just put the all report information to the output.
 
-On every step step you must read the following files:
-- read the problem description defined by the user from the `.council/problem.md` file.
-- read the global knowledge base from the `.council/knowledge.md` file, updated by the "clerk" on the previous step.
+On every step step you must reread the following files:
+- read the problem description defined by the user from the `.council/problem.md` file, the user could make additional changes or comments during the process.
+- read the global knowledge base from the `.council/knowledge.md` file, it was updated by the "clerk" in the end of the previous step.
 
 On every step step you could read the following files:
 - read the latest reports from everyone, especially from the "clerk" from the `.council/reports` folder.
