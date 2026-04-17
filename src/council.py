@@ -173,9 +173,13 @@ class CouncilRole(enum.Enum):
 
             '\n\n'
 
-            'If you need to run the Python code you can do it using the Conda environment with the name "council" '
+            'Follow the instructions in AGENTS.md to run the code or query the data.'
+
+            '\n\n'
+
+            'Also, if you need to run the Python code you can do it using the Conda environment with the name "council" '
             'which has `pandas`, `numpy`, `catboost`, `xgboost`, `vowpalwabbit`, `scikit-learn`, `hdbscan`, '
-            '`statsmodels`, `datasketches` and the other libraries.'
+            '`statsmodels`, `datasketches` and some other libraries.'
 
             '\n\n'
 
